@@ -15,7 +15,7 @@ docker_container 'plex' do
   restart_policy 'always'
   host_name node['plex']['host_name']
   domain_name node['plex']['domain_name']
-  volumes ["#{node['plex']['config_volume']}:/config, #{node['plex']['data_volume']}:/data"]
+  volumes ["#{node['plex']['config_volume']}:/config", "#{node['plex']['data_volume']}:/data"]
 end
 
 # open port in firewall
