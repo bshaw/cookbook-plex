@@ -1,0 +1,9 @@
+default['plex']['docker_image'] = 'timhaak/plex'
+default['plex']['docker_image'] = 'latest'
+default['plex']['env_variables'] = ['PLEX_ALLOWED_NETWORKS=192.168.1.0/24']
+default['plex']['host_port'] = 32400
+default['plex']['container_port'] = 32400
+default['plex']['host_name'] = 'plex'
+default['plex']['domain_name'] = 'example.com'
+default['plex']['config_volume'] = '/plex/config'
+default['plex']['data_volume'] = '/plex/data'
